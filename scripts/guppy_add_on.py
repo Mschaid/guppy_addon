@@ -1,4 +1,15 @@
 # %%%
+
+import seaborn as sns
+import matplotlib.patches as patches
+import matplotlib.pyplot as plt
+import h5py
+import os
+import numpy as np
+import pandas as pd
+import re
+
+
 """
 general workflow for post processing is as follows::
 
@@ -19,19 +30,7 @@ class for plot timeseries data
 this includes FP traces,
 """
 
-# %%
 
-
-
-
-import seaborn as sns
-import matplotlib.patches as patches
-import matplotlib.pyplot as plt
-import h5py
-import os
-import numpy as np
-import pandas as pd
-import re
 class Subject:
     """
     The Subject class represents an experimental animal, it allows you to call any of the files from from the guppy output
